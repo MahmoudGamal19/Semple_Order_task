@@ -1,0 +1,21 @@
+﻿@inject Microsoft.AspNetCore.Identity.SignInManager<Doman.Model.User> SignInManager
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+ </head>
+  @if(SignInManager.IsSignedIn(User)){
+<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link"asp-action="Index" id="Customer" asp-controller="Customer"  >Customer</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link"  asp-action="Index" id="Item" asp-controller="Item"   >Items</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" asp-action="Index" id="Oreder" asp-controller="Order">Order</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" asp-action="logout" id="Out" asp-controller="Authintcation" >LogOut</a>
+  </li>
+</ul>
+  }
+ 

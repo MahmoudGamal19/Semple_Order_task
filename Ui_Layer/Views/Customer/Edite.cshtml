@@ -1,0 +1,69 @@
+﻿@model Ui_Layer.Models.CustomerView
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <script src="~/lib/jquery/dist/\jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="rew"  style="padding-top:20px">
+                <div class="col-12">
+                    <div class="card" >
+                       <div class="row">
+                          <h1 id="sys_branchTitle" class="text-center font-weight-bold">Customers</h1>
+                       </div>
+                       <form  method="post" asp-action="Edite_customer" asp-controller="Customer" >
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label asp-for="Id">Custpomer Id</label>
+                                          <input type="text" asp-for="Id" class="form-control" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label asp-for="Name">Name</label>
+                                          <input type="text" asp-for="Name" class="form-control" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label asp-for="Address">Addres</label>
+                                          <input type="text" asp-for="Address" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group"> 
+                                        <label asp-for="Date">Date</label>
+                                         <input type="date" asp-for="Date" class="form-control">
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group"> 
+                                        <label asp-for="PhoneNo">Phone </label>
+                                         <input type="text" asp-for="PhoneNo" class="form-control">
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                 <div class="col-sm-4 form-group offset-sm-8 " style="align-content:center;">
+                                     <button type="submit" class="btn btn-success  " style="padding:5px;">Edite</button>
+                                     <button type="button" asp-action="Index" asp-controller="Customer" class="btn btn-dark " style=" padding:5px;">Back</button>
+                                 
+                                 </div>
+                    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,341 @@
+﻿@model Ui_Layer.Models.OrderHView
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/Order_Create.css" />
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="rew" style="padding-top:20px">
+                <div class="col-12">
+                    <div class="card " >
+                       <div class="row">
+                          <h1 id="sys_branchTitle" class="text-center font-weight-bold">Create Order</h1>
+                       </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label >Order Id</label>
+                                          <input type="text" id="Order_Id"  asp-for="Id" readonly class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label >Discripton</label>
+                                          <input  id="Order_Discripton" type="text" asp-for="Order_Discripton" class="form-control" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label >Customer Id</label>
+                                         <select class="select"   id="Cust_Id" >
+                                             <option value="@Model.Cust_Id" selected>@Model.Cust_Id</option>
+                                        @foreach(var mod in  ViewBag.Customer)
+                                        {
+                                            <option value="@mod.Id">@mod.Id</option>
+                                        }
+                                    </select>
+                                      </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group"> 
+                                        <label >Name</label>
+                                         <input   id="Cust_Name" asp-for="Customer.Name" readonly class="form-control"type="text">
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label >Phone</label>
+                                          <input type="text" id="Cust_phone" asp-for="Customer.PhoneNo" readonly class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group"> 
+                                        <label >Address</label>
+                                        <input type="text" id="Cust_Address"value="Customer.Address" asp-for="Customer.Address" readonly class="form-control">
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label >Date</label>
+                                          <input type="date" id="Order_Date" asp-for="Add_date"  class="form-control" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="table_head">
+                            <table id="Item_Table" class="table">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col">
+                                                <p>Item Id</p>
+                                        </th>
+                                        <th scope="col">
+                                                <p>Item Discription</p>
+                                        </th>
+                                        <th scope="col">
+                                                <p>Quantity</p>
+                                        </th>
+                                        <th scope="col">
+                                                <p>Price</p>
+                                        </th>
+                                        <th scope="col">
+                                                <p>Total</p>
+                                        </th>
+                                        <th scope="col">
+                                            <p>Remove</p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+
+                                        @foreach(var obj in Model.OrderD){
+                                    <tr id='tr_@obj.Count'>
+                                                <td>
+                                            <select class='select1 form-control' asp-for='@obj.Item_Id' id='Item_Id_@obj.Count'>
+                                                 <option value='@obj.Item_Id' selected>@obj.Item_Id</option>
+                                                
+                                                @foreach (var Item in ViewBag.Items)
+                                                 {
+           
+                                                        <option value='@Item.Id' >@Item.Id</option>
+                                                 }
+                                                    </select>
+                                                 </td>
+                                                 <td>
+                                            <input class='Item_Name' readonly type='text' asp-for='@obj.Item_Name' id='Item_Name_@obj.Count' />
+                                                <td>
+                                            <input class='quantity' type='number' asp-for='@obj.Quantity' id='Order_Item_Quantity_@obj.Count' />
+                                                </td>
+                                                <td>
+                                            <input class='Item-Price' readonly type='number' asp-for='@obj.Price' id='Item_Price_@obj.Count' />
+                                                </td>
+                                                <td>
+                                            <input class='Item-Total' readonly type='number' asp-for='@obj.Total' id='Item_Total_@obj.Count' />
+                                                </td>
+                                                   <td> 
+                                                    <button  onclick="deletRow(@obj.Count)">
+                                                        <ion-icon name="trash-outline"></ion-icon>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                     }
+                                    
+                                </tbody>
+                            </table>
+                            <div class="row">
+                            <div class="col-md-1">
+                              <p> Total :</p>
+                            </div>
+                               <div class="col-md-2">
+                               <input readonly id="Order-Total"asp-for="Total" />
+                               </div>
+                               
+                             </div>
+                            </div>
+
+                    
+                                <div class="buttons col-md-2 form-group offset-md-10 align-self-end">
+                                <button type="button" class="btn btn-secondary form-control " id="Add_Item">Add Item</button>
+                             </div>
+                            
+                            </div>
+                            <div class="row buttons">
+                                 <div class="col-md-2 form-group offset-md-5 ">
+                                 <button type="button" class="btn btn-success form-control" id="Create" >Create</button>
+                             </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        
+    </body>
+</html>
+
+@section Scripts{
+    @{
+    <partial name="_ValidationScriptsPartial" />
+    }
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="~/lib/jquery/dist/jquery.min.js " ></script>
+  <script src="~/js/site.js"></script>
+  <script>
+        var removedCount = 0;
+      $(document).ready(function(){
+        
+         $("#Cust_Id").change(function(){
+            $.ajax({
+                url:"/Order/GetCustInformation/"+$("#Cust_Id").val(),
+                method:"GET",
+                success:function(Cust_Data){
+                    $("#Cust_Name").attr("placeholder",Cust_Data.name);
+                    $("#Cust_Name").attr("value",Cust_Data.name);
+                    $("#Cust_Name").attr("readonly",true);
+                    $("#Cust_phone").attr("placeholder",Cust_Data.phoneNo);
+                    $("#Cust_phone").attr("value",Cust_Data.phoneNo);
+                    $("#Cust_phone").attr("readonly",true);
+                    $("#Cust_Address").attr("placeholder",Cust_Data.address);
+                    $("#Cust_Address").attr("value",Cust_Data.address);
+                    $("#Cust_Address").attr("readonly",true);
+                },
+                error:function(){
+                    console.log("error");
+                }
+               });
+            });     
+            let count=@Model.OrderD.Count()+1;
+           $("#Add_Item").click(function(){
+                let New_Div = "<tr id='tr_" + count + "'>";
+                New_Div += "<td><select class='select1 form-control' asp-for= 'OrderD[" + count + "].Item_Id' id = 'Item_Id_" + count + "' >";
+                       New_Div+="<option value= 'Select Id' selected > Select Id </option></select></td>";
+                New_Div += " <td>";
+                New_Div += "<input class='Item_Name' type='text' readonly id = 'Item_Name_" + count + "' />";
+                       New_Div+="</td>";
+                New_Div += "<td>";
+                New_Div += " <input class= 'quantity' type='number' id = 'Order_Item_Quantity_" + count + "' />";
+                       New_Div+="</td>";
+                New_Div += "<td>";
+                New_Div += "<input class= 'Item-Price' type='number' readonly id = 'Item_Price_" + count + "' />";
+                       New_Div+="</td>";
+                New_Div += "<td>";
+                New_Div += "<input class= 'Item-Total' type='number' readonly  id = 'Item_Total_" + count + "' />";
+                            New_Div+="</td>";
+                New_Div += " <td>  <button onclick=deletRow(" + count + ")> <ion-icon name='trash-outline'></ion-icon></button>";
+                            New_Div+= "</tr>";
+                $("table tbody").append(New_Div);
+                   var select="#Item_Id_"+count;
+                 let Items =New_Items(select);
+                 $(select).change(function(){
+                     if($(select).val()!="Select Id"){
+                     $.ajax({
+                        url:"/Order/GetItemInformation/"+$(select).val(),
+                        method:"GET",
+                        success:function(Item_data){
+                            $("#Item_Price_"+count).attr("value",Item_data.price);
+                            $("#Item_Price_"+count).attr("readonly",true);
+                            $("#Item_Name_"+count).attr("value",Item_data.discripton);
+                            $("#Item_Name_"+count).attr("readonly",true);
+                        },
+                        error:function(){
+                             console.log("Error In Item Information");
+                        }
+                     });
+                     }else{
+                            $("#Item_Price_"+count).attr("value",'');
+                            $("#Item_Price_"+count).attr("readonly",false);
+                            $("#Item_Name_"+count).attr("value",'');
+                            $("#Item_Name_"+count).attr("readonly",false);
+                     }
+                 });
+                var Quantitny = "#Order_Item_Quantity_" + count;
+                var item_price = "#Item_Price_"+count;
+                var Item_Total = $("#Item_Total_" + count);
+                var Total = $("#Order-Total");
+                 $(Quantitny).change(function(){
+                     let total=$(Quantitny).val()*$(item_price).val();
+                    Item_Total.attr("readonly", true);
+                    Item_Total.attr("value", total);
+                    var t = Number(Total.val())+ total;
+                    Total.attr("readonly", true);
+                    Total.attr("value", t);
+                     count++;  
+                 });
+              });     
+              $("#Create").click(function(){
+                var rowCount = $("#Item_Table >tbody >tr").length+removedCount;
+                var OrderH = {};
+                var Orderd = [];
+                OrderH.Cust_Id = $("#Cust_Id").val();
+                OrderH.Id = $("#Order_Id").val();
+                OrderH.Add_date = $("#Order_Date").val();
+                OrderH.Order_Discripton = $("#Order_Discripton").val();
+                OrderH.Total = $("#Order-Total").val();     
+                var count=0;
+                    for (var i =1 ; i <= rowCount; i++) {
+                        var opject={};
+                    if ($("#Item_Id_" + i).val() != null ) {
+                        if( $("#Item_Id_" + i).val() != "Select Id"){
+                            opject.Id=$("#Order_Id").val()+"_"+count;
+                            opject.Count=count;
+                            opject.Item_Id = $("#Item_Id_" + i).val();
+                            opject.Item_Name = $("#Item_Name_" + i).val();
+                            opject.Quantity = $("#Order_Item_Quantity_" + i).val();
+                            opject.Price = $("#Item_Price_" + i).val();
+                            opject.Total = $("#Item_Total_"+ i).val();
+                            opject.Orderh_Id = $("#Order_Id").val();
+                            Orderd[count]=opject;
+                            count++;
+                        }
+                    }
+                }
+
+                OrderH.OrderD = Orderd;
+               
+                var result=Edit_Order(OrderH);
+              });
+            
+                    });
+       function New_Items(Id){            
+                         $.ajax({
+                         url:"/Order/GetItemsInformation",
+                         method:"GET",
+                         dataType: 'json',
+                         success:function(Items_Data){
+                             var $select = $(Id);
+                             $.each(Items_Data,function(key,value)
+                             {
+                                $select.append('<option value=' +value.id +'>' +value.id + '</option>'); 
+                             });
+                                 },
+                         error:function(){
+                             console.log("error");
+                         } 
+                     });         
+         };
+        function Edit_Order(orderHView) {
+            console.log(orderHView);
+            $.ajax({
+                url: "/Order/Edit_Order",
+                type:"POST",
+                data: orderHView,
+                ContentType: "application/x-www-form-urlencoded;charset=utf-8",
+                success:function(){
+                    window.location.href = "https://localhost:44390/Order";
+                },
+                error:function(date){
+                   alert(ViewBag.Massage);
+                    window.location.href = "https://localhost:44390/Edit/"+date.Id;
+                }           
+           });
+           
+       }
+       
+            function deletRow(counter) {
+                console.log("am Heeer");
+                var Total = $("#Order-Total");
+                var removead = $("#Item_Total_" + counter).val();
+                Total.attr("value", Total.val() - removead);
+                $("#Item_Table >tbody >#tr_" + counter).remove();
+                removedCount++;
+
+            }
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    }
+

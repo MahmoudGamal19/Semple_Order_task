@@ -1,0 +1,58 @@
+﻿@model Ui_Layer.Models.ItemView
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="rew" style="padding-top:20px">
+                <div class="col-12">
+                    <div class="card " >
+                       <div class="row">
+                          <h1 id="sys_branchTitle" class="text-center font-weight-bold">Create Item</h1>
+                       </div>
+                       <form  method="post" asp-action="Create_Item" asp-controller="Item" >
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label asp-for="Id">Item Id</label>
+                                          <input type="text" asp-for="Id" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label asp-for="Discripton">Discripton</label>
+                                          <input type="text" asp-for="Discripton" class="form-control" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <label asp-for="Quantity">Quantity</label>
+                                          <input type="text" asp-for="Quantity" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group"> 
+                                        <label asp-for="Price">Price</label>
+                                         <input  asp-for="Price" class="form-control">
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                 <div class="col-md-2 form-group offset-md-10 align-self-end">
+                                 <button type="submit" class="btn btn-success  " style="padding-bottom:15px;">Create</button>
+                                 </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html>
+    <head>
+          <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+          <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1 id="sys_branchTitle" class="text-center font-weight-bold">Oeders</h1>
+            </div>
+             <div class="row">
+                <p><a class="bx bxs-add-to-queue bx-sm mb-2 font-weight-semibold font-size-18" asp-action="Create" asp-controller="Order" >
+                    <ion-icon name="add-circle-outline"></ion-icon>
+                     Create New Order
+                </a></p>
+            </div>
+            <div class="row">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Id</th>
+                      <th scope="col">Discreption</th>
+                      <th scope="col">Customer Name</th>
+                      <th scope="col">Addres</th>
+                      <th scope="col">Phone No</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Total</th>
+                      <th scope="col">Oprations</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     
+                      @foreach(var order in ViewBag.OrderH ){
+
+                        <tr>
+                          <td>@order.Id</td>
+                          <td>@order.Order_Discripton</td>
+                          <td>@order.Customer.Name </td>
+                          <td>@order.Customer.Address</td>
+                          <td>@order.Customer.PhoneNo</td>
+                          <td>@order.Customer.Date</td>
+                          <td>@order.Total</td>
+                          <td>
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <a href="/Order/Edit/@order.Id">
+                                          <ion-icon name="create-outline"></ion-icon>
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-6">
+                                     <a href="/Order/Delete/@order.Id">
+                                         <ion-icon name="trash-outline"></ion-icon>
+                                     </a>
+                                  </div>
+                              </div>
+                          </td>
+
+                        </tr>
+                      }
+              </tbody>
+            </table>
+            </div>
+        </div>
+    </body>
+</html>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     }

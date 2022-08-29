@@ -1,0 +1,55 @@
+﻿@model Ui_Layer.Models.RegisterModel.RegisterView
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/Index_Style.css" />
+</head>
+<body class="hero">
+    <div class="Register_form_box">
+        <div class="bottom_box">
+            <div id="btn"></div>
+            <a class="toggle_buttom btn" asp-action="Login" asp-controller="Authintcation">Login</a>
+            <a class="toggle_buttom btn" asp-action="Register" asp-controller="Authintcation">Register</a>
+        </div>
+        <form class="Register_Form "  method="post" asp-action="Register_Action" asp-controller="Authintcation"enctype="multipart/form-data" >
+
+            <input type="text" class="input_form" placeholder="Name" asp-for="Neme" />
+            <span asp-validation-for="Neme" class="text-danger"></span>
+
+            <input type="text" class="input_form" placeholder="Email" asp-for="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+
+            <input type="password" class="input_form" placeholder="Password" asp-for="Password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+
+            <input type="password" class="input_form" placeholder="Conferm-pass" asp-for="Conferm_Password" />
+            <span asp-validation-for="Conferm_Password" class="text-danger"></span>
+
+            <button type="submit"  class="Submit_buttom" style="border-top:20px;">Regiter</button>
+        </form>
+    </div>
+</body>
+</html>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+             <script src="~/lib/jquery/dist/jquery.js"></script>
+             <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                    if(ViewData["Model"]!=null){
+                alert(ViewData["Model"]);
+            }
+           if(ViewData["Email"]!=null){ 
+               alert(ViewData["Model"]);
+           }
+        });
+
+    </script>
+
+    }

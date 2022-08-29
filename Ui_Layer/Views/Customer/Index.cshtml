@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html>
+    <head>
+          <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+          <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1 id="sys_branchTitle" class="text-center font-weight-bold">Customers</h1>
+            </div>
+             <div class="row">
+                <p><a class="bx bxs-add-to-queue bx-sm mb-2 font-weight-semibold font-size-18" asp-action="Create" asp-controller="Customer" >
+                    <ion-icon name="add-circle-outline"></ion-icon>
+                     Create New Customer
+                </a></p>
+            </div>
+            <div class="row">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Customer ID</th>
+                      <th scope="col">Customer Name</th>
+                      <th scope="col">Address</th>
+                      <th scope="col">Phone</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Oprations</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      @foreach(var Cust in ViewBag.Customer){
+                        var count = 1;
+                        <tr>
+                          <th>@count</th>
+                          <td>@Cust.Id</td>
+                          <td>@Cust.Name</td>
+                          <td>@Cust.Address </td>
+                          <td>@Cust.PhoneNo</td>
+                          <td>@Cust.Date</td>
+                          <td>
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <a href="/Customer/Edite/@Cust.Id">
+                                          <ion-icon name="create-outline"></ion-icon>
+                                      </a>
+                                  </div>
+                                  <div class="col-sm-6">
+                                     <a href="/Customer/Delete/@Cust.Id">
+                                         <ion-icon name="trash-outline"></ion-icon>
+                                     </a>
+                                  </div>
+                              </div>
+                          </td>
+
+                        </tr>
+                      }
+              </tbody>
+            </table>
+            </div>
+        </div>
+    </body>
+</html>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+}

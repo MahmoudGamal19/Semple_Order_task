@@ -1,0 +1,15 @@
+D:\Practical_Task\Doman\bin\Debug\net5.0\Doman.deps.json
+D:\Practical_Task\Doman\bin\Debug\net5.0\Doman.runtimeconfig.json
+D:\Practical_Task\Doman\bin\Debug\net5.0\Doman.runtimeconfig.dev.json
+D:\Practical_Task\Doman\bin\Debug\net5.0\Doman.dll
+D:\Practical_Task\Doman\bin\Debug\net5.0\Doman.pdb
+D:\Practical_Task\Doman\obj\Debug\net5.0\Doman.csproj.AssemblyReference.cache
+D:\Practical_Task\Doman\obj\Debug\net5.0\Doman.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practical_Task\Doman\obj\Debug\net5.0\Doman.AssemblyInfoInputs.cache
+D:\Practical_Task\Doman\obj\Debug\net5.0\Doman.AssemblyInfo.cs
+D:\Practical_Task\Doman\obj\Debug\net5.0\Doman.csproj.CoreCompileInputs.cache
+D:\Practical_Task\Doman\obj\Debug\net5.0\Doman.dll
+D:\Practical_Task\Doman\obj\Debug\net5.0\refint\Doman.dll
+D:\Practical_Task\Doman\obj\Debug\net5.0\Doman.pdb
+D:\Practical_Task\Doman\obj\Debug\net5.0\Doman.genruntimeconfig.cache
+D:\Practical_Task\Doman\obj\Debug\net5.0\ref\Doman.dll
