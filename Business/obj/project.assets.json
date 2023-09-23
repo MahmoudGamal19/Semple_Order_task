@@ -11199,11 +11199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practical_Task\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "D:\\Practical_Task\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Practical_Task\\Business\\obj\\",
+      "outputPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11220,11 +11220,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Practical_Task\\Doman\\Doman.csproj": {
-              "projectPath": "D:\\Practical_Task\\Doman\\Doman.csproj"
+            "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj": {
+              "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj"
             },
-            "D:\\Practical_Task\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Practical_Task\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -11292,7 +11292,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   },

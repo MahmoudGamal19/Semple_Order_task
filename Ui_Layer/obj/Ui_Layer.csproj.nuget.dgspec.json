@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practical_Task\\Ui_Layer\\Ui_Layer.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Ui_Layer\\Ui_Layer.csproj": {}
   },
   "projects": {
-    "D:\\Practical_Task\\Business\\Business.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practical_Task\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "D:\\Practical_Task\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Practical_Task\\Business\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Practical_Task\\Doman\\Doman.csproj": {
-                "projectPath": "D:\\Practical_Task\\Doman\\Doman.csproj"
+              "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj": {
+                "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj"
               },
-              "D:\\Practical_Task\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Practical_Task\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -100,18 +100,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Practical_Task\\Doman\\Doman.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practical_Task\\Doman\\Doman.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj",
         "projectName": "Doman",
-        "projectPath": "D:\\Practical_Task\\Doman\\Doman.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Practical_Task\\Doman\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -193,18 +193,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Practical_Task\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practical_Task\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\Practical_Task\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Practical_Task\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -221,8 +221,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Practical_Task\\Doman\\Doman.csproj": {
-                "projectPath": "D:\\Practical_Task\\Doman\\Doman.csproj"
+              "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj": {
+                "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj"
               }
             }
           }
@@ -286,18 +286,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Practical_Task\\Ui_Layer\\Ui_Layer.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Ui_Layer\\Ui_Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practical_Task\\Ui_Layer\\Ui_Layer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Ui_Layer\\Ui_Layer.csproj",
         "projectName": "Ui_Layer",
-        "projectPath": "D:\\Practical_Task\\Ui_Layer\\Ui_Layer.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Ui_Layer\\Ui_Layer.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Practical_Task\\Ui_Layer\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Ui_Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -308,20 +308,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Practical_Task\\Business\\Business.csproj": {
-                "projectPath": "D:\\Practical_Task\\Business\\Business.csproj"
+              "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\Business.csproj"
               },
-              "D:\\Practical_Task\\Doman\\Doman.csproj": {
-                "projectPath": "D:\\Practical_Task\\Doman\\Doman.csproj"
+              "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj": {
+                "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj"
               },
-              "D:\\Practical_Task\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Practical_Task\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -368,6 +369,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -376,7 +383,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

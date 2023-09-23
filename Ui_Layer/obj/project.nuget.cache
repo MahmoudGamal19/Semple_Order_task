@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KTcB2TEwXBaKckaKsKyaJWid43K0jtANe71j7OYiZVboDaZHu1e5o+xPmBUwgJViEv6d06vJQWqWyo035WUpmg==",
+  "dgSpecHash": "jVMCIrIZI5Yg4vNAv3jIB3sdT06HiBnnrSc7cqwv1cGxTYxEsr1xq/2ty7JLaLP/uBLf8FPR0UBoFe2RRI6yKQ==",
   "success": true,
-  "projectFilePath": "D:\\Practical_Task\\Ui_Layer\\Ui_Layer.csproj",
+  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Ui_Layer\\Ui_Layer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\5.0.1\\automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",
@@ -222,7 +222,8 @@
     "C:\\Users\\user\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": [
     {

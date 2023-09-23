@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2O5MZ2EMfuevTBCvS1BbX1lF37onT3RqRODC5tbl6U+oRZhYXAzvwHRjhZFcJm0PeA5C4v3iUYqOpnwtbgEj0w==",
+  "dgSpecHash": "beJ6wRWUOOO7sKaj9EfKbkMfAYxJaINEa5Q34Q/etMHdMpNumKc9ywj8UXDAvb+EOFlgtJDjs0cpuCycyUKGQg==",
   "success": true,
-  "projectFilePath": "D:\\Practical_Task\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\5.0.1\\automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",

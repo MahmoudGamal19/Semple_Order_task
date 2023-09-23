@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practical_Task\\Doman\\Doman.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj": {}
   },
   "projects": {
-    "D:\\Practical_Task\\Doman\\Doman.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practical_Task\\Doman\\Doman.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj",
         "projectName": "Doman",
-        "projectPath": "D:\\Practical_Task\\Doman\\Doman.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Practical_Task\\Doman\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

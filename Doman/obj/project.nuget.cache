@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TYU5aPWmlo4wTY4U86Xm7aQWcXubFYkNtAvcPnsGBIo+dAYRlFO4sFRnfxYOyZ5n2cPH9eyJyg6MVi/HaL/JYg==",
+  "dgSpecHash": "XcnyLIht//2lgzIRXZiBpWWKbs8kqTQjW9lL51F2bbdo+WCw1gxFZTs0fuGanj76eSey4llKbfSBCLzxhCs6AQ==",
   "success": true,
-  "projectFilePath": "D:\\Practical_Task\\Doman\\Doman.csproj",
+  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\MahmoudGamal19\\Semple_Order_task\\Doman\\Doman.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\5.0.1\\automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",
